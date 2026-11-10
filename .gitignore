@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# IDE
+.idea/
+.vscode/
+
+# Data / outputs
+datasets/
+Dataset/
+results/
+logs/
+model/
+BANet/
+
+# Weights & logs
+*.pth
+*.pth.tar
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
