@@ -15,7 +15,7 @@ DSSFusion_release/
 ├── module/
 │   ├── FusionNet.py        # FusionNet, Encoder, Merge, SegmentMI
 │   ├── TransformerNet.py   # SDIB (background branch)
-│   ├── CBAM_old.py         # DAFB (foreground branch)
+│   ├── CBAM.py             # DAFB (foreground branch)
 │   ├── FreqFusion.py       # frequency-aware fusion block
 │   ├── model_TII.py        # BiSeNet segmentation network
 │   └── resnet.py           # ResNet18 backbone for BiSeNet
@@ -69,6 +69,11 @@ Checkpoints and intermediate fused images are written to `model/Fusion` and
 `Dataset/Fusion`.
 
 ## Inference
+
+Pretrained weights are included under `model/Fusion/`:
+
+- `fusion_model_3.pth` — fusion network (round 3)
+- `seg_model_3.pth` — BiSeNet segmentation network (round 3)
 
 ```bash
 python test.py \

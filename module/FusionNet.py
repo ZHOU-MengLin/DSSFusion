@@ -7,7 +7,7 @@ import torch.nn.functional as F
 import numpy as np
 from module.TransformerNet import SDIB
 # from utils.utils import interp
-from module.CBAM_old import DAFB
+from module.CBAM import DAFB
 from utils.utils import YCrCb2RGB
 from module.FreqFusion import FreqFusion
 

@@ -14,12 +14,17 @@ datasets/
 Dataset/
 results/
 logs/
-model/
 BANet/
 
-# Weights & logs
+# Checkpoints: ignore everything except the released weights
 *.pth
 *.pth.tar
+!model/
+!model/Fusion/
+!model/Fusion/fusion_model_3.pth
+!model/Fusion/seg_model_3.pth
+
+# Logs
 *.log
 
 # OS
